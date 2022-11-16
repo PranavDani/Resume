@@ -1,5 +1,5 @@
 # Résumé for Pranav Dani
-Hosted at [resume.pranavdani.me](resume.pranavdani.me)
+Hosted at [resume.pranavdani.me](https://resume.pranavdani.me)
 
 The template that I have used: [Latex Template](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs)
 
