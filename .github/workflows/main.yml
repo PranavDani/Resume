@@ -43,7 +43,9 @@ jobs:
                   cp CNAME build/
                   mv "build/resume.pdf" "build/Pranav Dani Résumé.pdf"
             - name: Git add
-              run: git add *.pdf
+              run: |
+                  git config --global --add safe.directory '*'
+                  git add *.pdf
 
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@v4
