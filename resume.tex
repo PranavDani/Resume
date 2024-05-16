@@ -56,7 +56,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
@@ -135,6 +135,7 @@
 \begin{center}
     {\huge \scshape Pranav Dani} \\ \vspace{4pt}
     \small
+    \href{tel:+19344529426}{\raisebox{-0.2\height}\ 9344519426} ~
     \faGlobe \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com} ~
     \faGithub \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\ github.com/PranavDani} ~
     \faLinkedin \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\ linkedin.com/in/pranav-dani} ~
@@ -208,7 +209,7 @@
             \resumeItemListEnd
         \vspace{-3pt}
     \resumeSubHeadingListEnd
-\vspace{-18pt}
+\vspace{-15pt}
 
 
 
@@ -216,8 +217,27 @@
 % \href{https://expense-tracker03.herokuapp.com}{Web app},
 %-----------PROJECTS-----------
 \section{Projects and Research}
-    \vspace{-5pt}
+    \vspace{-7pt}
     \resumeSubHeadingListStart
+
+        % \resumeProjectHeading
+        %     {\textbf{Accessibility for People Living in Affordable Housing} $|$ \emph{Flask, HTML, CSS, D3.js}}{Apr 2024 -- May 2024}
+        %     \resumeItemListStart
+        %         \resumeItem{Implemented asynchronous disk logging protocol, achieving a \textbf{94\% improvement} in \textbf{write syscall latency}.}
+        %         \resumeItem{Added small file support with file type conversion handling. Achieved a \textbf{reduction of 29\% and 91\% disk IO} requests with unchanged logging and new logging protocol respectively.}
+        %         \resumeItem{Implemented \textbf{ftruncate()} syscall for file truncation and seamless transition between "small" and regular files.}
+        %     \resumeItemListEnd
+        % \vspace{-19pt}
+
+         \resumeProjectHeading
+            {\textbf{Improving File System syscall performance on XV6} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
+            \resumeItemListStart
+                \resumeItem{Engineered \textbf{asynchronous disk logging protocol}, enhancing the write efficiency, resulting in a \textbf{94\%  latency reduction}.}
+                \resumeItem{Introduced small file support with file type conversion handling. Resulted in a \textbf{reduction of 29\% and 91\% disk IO} requests with unchanged logging and new logging protocol respectively.}
+                \resumeItem{Added \textbf{ftruncate() syscall} for file truncation and seamless transition between "small" and regular files.}
+            \resumeItemListEnd
+        \vspace{-17pt}
+    
         \resumeProjectHeading
             {\textbf{\normalsize{Fault Tolerant Sharded Key-Value Store With Transactions using \href{https://raft.github.io/raft.pdf}{Raft}}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
             \resumeItemListStart
@@ -225,7 +245,7 @@
                 \resumeItem{Engineered \textbf{sharding} using \textbf{consistent hashing}, ensuring efficient data distribution across nodes. Automated \textbf{partition rebalancing} during node joins and departures.}
                 \resumeItem{Implemented a \textbf{versioned key-value store} that supports \textbf{cross-shard Transactions} using \textbf{2-Phase Locking} and \textbf{2-Phase Commit} with \textbf{Optimistic Concurrency Control}.}
             \resumeItemListEnd
-        \vspace{-19pt}
+        \vspace{-17pt}
 
         \resumeProjectHeading
             {\textbf{\normalsize{BackGen - Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Aug 2023}
@@ -234,17 +254,17 @@
                 \resumeItem{Creates a structure for data models and \textbf{RESTful API endpoints}, and generates executable code for the same in Golang.}
                 \resumeItem{Generates approximately 48\% of the code. (Result evaluated for creating a backend for a simple Todo application.)}
             \resumeItemListEnd
-        \vspace{-19pt}
+        \vspace{-17pt}
 
         
-        \resumeProjectHeading
-            {\textbf{\normalsize{ShareSpace}} $|$ \emph{React.js, Tailwind, Firebase, Figma, Excalidraw} $|$ \href{https://github.com/viveknamaye/ShareSpace}{GitHub}}{Feb 2023}
-            \resumeItemListStart
-                \resumeItem{Developed a \textbf{web application} called ShareSpace to facilitate roommate search by leveraging Firebase as the backend and React.js for the frontend.}
-                \resumeItem{Implemented an \textbf{intuitive user interface} using Tailwind CSS.}
-                \resumeItem{Utilized React.js to create filters for room searches based on user profiles, groups, and personal preferences.}
-            \resumeItemListEnd
-        \vspace{-19pt}
+        % \resumeProjectHeading
+        %     {\textbf{\normalsize{ShareSpace}} $|$ \emph{React.js, Tailwind, Firebase, Figma, Excalidraw} $|$ \href{https://github.com/viveknamaye/ShareSpace}{GitHub}}{Feb 2023}
+        %     \resumeItemListStart
+        %         \resumeItem{Developed a \textbf{web application} called ShareSpace to facilitate roommate search by leveraging Firebase as the backend and React.js for the frontend.}
+        %         \resumeItem{Implemented an \textbf{intuitive user interface} using Tailwind CSS.}
+        %         \resumeItem{Utilized React.js to create filters for room searches based on user profiles, groups, and personal preferences.}
+        %     \resumeItemListEnd
+        % \vspace{-19pt}
 
         
         \resumeProjectHeading
@@ -254,7 +274,7 @@
                 \resumeItem{Leveraged \textbf{Beautiful Soup} for efficient page parsing and utilized \textbf{FastAPI} to handle requests from the extension.}
                 \resumeItem{Incorporated NLP techniques through \textbf{Spacy} to optimize text summaries while preserving essential meaning.}
             \resumeItemListEnd
-        \vspace{-19pt}
+        \vspace{-17pt}
 
 
         \resumeProjectHeading
@@ -263,7 +283,7 @@
                 \resumeItem{Architected an easy-to-use \textbf{E-commerce platform} for creating Granites and Marble quotations using React.js.}
                 \resumeItem{Utilized REST APIs in the web app to interact with Firebase for storing orders.}
             \resumeItemListEnd
-        \vspace{-19pt}
+        \vspace{-17pt}
 
         \resumeProjectHeading
             {\textbf{\normalsize{Expense Tracker}} $|$ \emph{Flask, PostgreSQL, Heroku, HTML, CSS, JS} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
@@ -300,12 +320,12 @@
             \resumeItemListEnd
         \vspace{-18pt}
 
-        \resumeProjectHeading
-            {\textbf{\normalsize{Google Developer Student Clubs TSEC}} $|$ \emph{Core Team Member}}{Aug 2021 -- Jul 2022}
-            \resumeItemListStart
-                \resumeItem{Involved with organizing and planning multiple technical events and maintaining a community with over 500 students.}
-            \resumeItemListEnd
-        \vspace{-18pt}
+        % \resumeProjectHeading
+        %     {\textbf{\normalsize{Google Developer Student Clubs TSEC}} $|$ \emph{Core Team Member}}{Aug 2021 -- Jul 2022}
+        %     \resumeItemListStart
+        %         \resumeItem{Involved with organizing and planning multiple technical events and maintaining a community with over 500 students.}
+        %     \resumeItemListEnd
+        % \vspace{-18pt}
 
         % \resumeProjectHeading
         %     {\textbf{\normalsize{ISTE-TSEC}} $|$ \emph{Senior Committee Member}}{Jul 2021 -- Jun 2022}
