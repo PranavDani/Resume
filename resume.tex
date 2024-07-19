@@ -56,7 +56,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.6in}
+\addtolength{\topmargin}{-.8in}
 \addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
@@ -135,9 +135,11 @@
 \begin{center}
     {\huge Pranav Dani} \\ \vspace{4pt}
     \small
-    \href{tel:+19344529426}{\raisebox{-0.2\height}\ 9344519426} ~
+    \faMobile
+    \href{tel:+19344529426}{\raisebox{-0.2\height}\ +1 (934) 451-9426} ~
     \faGlobe \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com} ~
     \faGithub \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\ github.com/PranavDani} ~
+    \\
     \faLinkedin \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\ linkedin.com/in/pranav-dani} ~
     \faEnvelope \href{mailto:contact@pranavdani.com}{\raisebox{-0.2\height}\  contact@pranavdani.com}
     \vspace{-10pt}
@@ -230,15 +232,15 @@
             \resumeItemListStart
                 \resumeItem{Implemented an instruction fetcher and a decoder for \textbf{RV64IM specs} which talks to physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{AXI4 protocol}.}
                 \resumeItem{Developed an ALU to execute instructions, and interact with reg file, supporting \textbf{pipeline stalls} on \textbf{RAW data hazards}.}
-                \resumeItem{Created a functional RISCV processor with a \textbf{direct-mapped cache} and support for \textbf{load/stores and ECALL instruction} with pipeline flush.}
+                \resumeItem{Created a functional RISCV processor with a \textbf{direct-mapped cache} and support for load/stores and \textbf{ECALL} instruction with pipeline flush.}
             \resumeItemListEnd
         \vspace{-17pt}
 
          \resumeProjectHeading
             {\textbf{Improving File System syscall performance on XV6} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
             \resumeItemListStart
-                \resumeItem{Engineered \textbf{asynchronous disk logging protocol}, enhancing the write efficiency, resulting in a \textbf{94\%  latency reduction}.}
-                \resumeItem{Introduced small file support with file type conversion handling. Resulted in a \textbf{reduction of 29\% and 91\% disk IO} requests with unchanged logging and new logging protocol respectively.}
+                \resumeItem{Designed an asynchronous \textbf{disk logging protocol}, enhancing the write efficiency, resulting in a \textbf{94\%  latency reduction}.}
+                \resumeItem{Introduced small file support with file type conversion handling. This resulted in a \textbf{reduction of 29\% disk IO} requests with unchanged logging and \textbf{a reduction of 91\% disk IO} requests with a new logging protocol.}
                 \resumeItem{Implemented \textbf{ftruncate() syscall} for file truncation and seamless transition between "small" and regular files.}
             \resumeItemListEnd
         \vspace{-17pt}
@@ -246,9 +248,9 @@
         \resumeProjectHeading
             {\textbf{\normalsize{Fault Tolerant Sharded Key-Value Store With Transactions using \href{https://raft.github.io/raft.pdf}{Raft}}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
             \resumeItemListStart
-                \resumeItem{Created a \textbf{persistent linearizable key-value store} utilizing the \textbf{Raft consensus algorithm} for leader election and data replication in an \textbf{asynchronous environment}. Implemented \textbf{log compaction} with \textbf{Snapshots}.}
+                \resumeItem{Created a persistent \textbf{linearizable} key-value store utilizing the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented \textbf{log compaction} with \textbf{Snapshots}.}
                 \resumeItem{Engineered \textbf{sharding} using \textbf{consistent hashing}, ensuring efficient data distribution across nodes. Automated \textbf{partition rebalancing} during node joins and departures.}
-                \resumeItem{Implemented a \textbf{versioned key-value store} that supports \textbf{cross-shard Transactions} using \textbf{2-Phase Locking} and \textbf{2-Phase Commit} with \textbf{Optimistic Concurrency Control}.}
+                \resumeItem{Implemented a versioned key-value store that supports \textbf{cross-shard Transactions} using \textbf{2-Phase Locking} and \textbf{2-Phase Commit} with \textbf{Optimistic Concurrency Control}.}
             \resumeItemListEnd
         \vspace{-17pt}
 
@@ -272,7 +274,7 @@
         \resumeProjectHeading
             {\textbf{\normalsize{Expense Tracker}} $|$ \emph{Flask, PostgreSQL, Heroku, HTML, CSS, JS} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
             \resumeItemListStart
-                \resumeItem{Designed and built a web app for recording and \textbf{managing personal expenses} with support for creating bulk expenses and \textbf{exporting user data in CSV and Excel formats} using Flask and PostgreSQL and hosted on Heroku.}
+                \resumeItem{Designed and built a web app for recording and managing personal expenses with support for creating \textbf{bulk expenses} and exporting user data in \textbf{CSV and Excel formats} using Flask and PostgreSQL and hosted on Heroku.}
                 \resumeItem{Provides the functionality to create \textbf{personalized budgets} based on multiple categories.}
             \resumeItemListEnd       
         
