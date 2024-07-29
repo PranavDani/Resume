@@ -176,10 +176,10 @@
     \vspace{-2pt}
 
             \resumeSubheading
-            {GPU Profiling}{May 2024 -- Present}
-            {Graduate Research Assistant}{New York, US}
+            {GPU Profiling - Energy Flamegraphs}{May 2024 -- Present}
+            {Graduate Research Assistant - Advisor: Prof. Dongyoon Lee}{New York, US}
             \resumeItemListStart
-                \resumeItem{Developing a software solution to capture CPU and GPU execution contexts, enabling the generation of flamegraphs and providing programming assistance for energy-efficient data centers.}
+                \resumeItem{Developing a software solution to capture CPU and GPU execution call stacks, enabling the generation of energy flamegraphs to provide assistance for energy-efficient data centers.}
             \resumeItemListEnd
         \vspace{-3pt}
         
@@ -228,25 +228,25 @@
         % \vspace{-19pt}
 
         \resumeProjectHeading
-            {\textbf{RISCV - \href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RV64IM} - Five Stage In-Order Pipeline} $|$ \emph{Verilog, GTKWave}}{Jun 2024 -- Present}
+            {\textbf{Computer Architecture - \href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RV64IM - RISCV} - Five Stage In-Order Pipeline} $|$ \emph{Verilog, GTKWave}}{Jun 2024 -- Present}
             \resumeItemListStart
-                \resumeItem{Implemented an instruction fetcher and a decoder for RV64IM specs which talks to physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{AXI4 protocol}.}
-                \resumeItem{Developed an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
+                \resumeItem{Designed a five-stage in-order pipeline for RV64IM specs which talks to physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{AXI4 protocol}.}
+                \resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
                 \resumeItem{Created a functional RISCV processor with a direct-mapped cache and support for load/stores and ECALL instruction with pipeline flush.}
             \resumeItemListEnd
         \vspace{-17pt}
 
          \resumeProjectHeading
-            {\textbf{Improving File System syscall performance on XV6} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
+            {\textbf{Kernel Programming - File Systems} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
             \resumeItemListStart
                 \resumeItem{Designed an asynchronous disk logging protocol, enhancing the write efficiency, resulting in a 94\%  latency reduction.}
-                \resumeItem{Introduced small file support with file type conversion handling. This resulted in a reduction of 29\% disk IO requests with unchanged logging and a reduction of 91\% disk IO requests with a new logging protocol.}
+                \resumeItem{Introduced small file support with file type conversion handling, reducing disk IO requests with unchanged logging protocol by 29\% and reducing disk IO requests with the new logging protocol by 91\%.}
                 \resumeItem{Implemented ftruncate() syscall for file truncation and seamless transition between "small" and regular files.}
             \resumeItemListEnd
         \vspace{-17pt}
     
         \resumeProjectHeading
-            {\textbf{\normalsize{Fault Tolerant Sharded Key-Value Store With Transactions using \href{https://raft.github.io/raft.pdf}{Raft}}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
+            {\textbf{\normalsize{Distributed Systems - \href{https://raft.github.io/raft.pdf}{Raft} Implementation}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
             \resumeItemListStart
                 \resumeItem{Created a persistent linearizable key-value store utilizing the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.}
                 \resumeItem{Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.}
