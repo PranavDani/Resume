@@ -37,11 +37,11 @@
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
+\usepackage[default]{sourcesanspro}
 
 % serif
 % \usepackage{CormorantGaramond}
-\usepackage{charter}
+% \usepackage{charter}
 % \usepackage{times}
 % \usepackage{helvet}
 
@@ -58,6 +58,7 @@
 \addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-.8in}
 \addtolength{\textheight}{1.4in}
+\setlength{\footskip}{4.08003pt}
 
 \urlstyle{same}
 
@@ -67,7 +68,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that the generated PDF is machine readable/ATS parsable.
@@ -133,195 +134,155 @@
 % \end{tabular*}
 
 \begin{center}
-    {\huge Pranav Dani} \\ \vspace{4pt}
-    \small
-    \faMobile
-    \href{tel:+19344529426}{\raisebox{-0.2\height}\ +1 (934) 451-9426} ~
-    \faGlobe \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com} ~
-    \faGithub \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\ github.com/PranavDani} ~
-    \\
-    \faLinkedin \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\ linkedin.com/in/pranav-dani} ~
-    \faEnvelope \href{mailto:contact@pranavdani.com}{\raisebox{-0.2\height}\  contact@pranavdani.com}
-    \vspace{-10pt}
+  {\huge Pranav Dani} \\ \vspace{4pt}
+  \small
+  \faMobile
+  \href{tel:+19344529426}{\raisebox{-0.2\height}\ +1 (934) 451-9426} ~
+  \faGlobe \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com} ~
+  \faGithub \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\ github.com/PranavDani} ~
+  \faLinkedin \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\ linkedin.com/in/pranav-dani} ~
+  \faEnvelope \href{mailto:contact@pranavdani.com}{\raisebox{-0.2\height}\  contact@pranavdani.com}
+  \vspace{-10pt}
 \end{center}
 
 
 %-----------EDUCATION-----------
 \section{Education}
 \resumeSubHeadingListStart
-    % \vspace{-4pt}
-        \resumeSubheading
-            {SUNY -- Stony Brook University}{Aug 2023 - May 2025}
-            {Master of Science, Computer Science }{New York, USA}
-            \resumeItemListStart
-                \resumeItem{Courses: Distributed Systems, Operating Systems, Computer Architecture, Theory of Databases, System Security}
-                \vspace{-2pt}
-                \resumeItem{Teaching Assistant: (CSE - 316) Fundamentals of Software Development}
-            \resumeItemListEnd
+\resumeSubheading
+{SUNY -- Stony Brook University}{Aug 2023 - May 2025}
+{Master of Science, Computer Science }{New York, USA}
+\resumeItemListStart
+\resumeItem{Courses: Computer Architecture, OS, Distributed Systems, System Security, Theory of Databases, Analaysis of algorithms}
+\vspace{-2pt}
+\resumeItem{Teaching Assistant: (CSE - 316) Fundamentals of Software Development}
+\resumeItemListEnd
 \vspace{-5pt}
 
-        \resumeSubheading
-            {University of Mumbai -- Thadomal Shahani Engineering College}{Aug 2019 - May 2023}
-            {Bachelor of Engineering, Information Technology}{Mumbai, India}
-            \resumeItemListStart
-                \resumeItem{Courses: OS, DBMS, DSA, Computer Networks, Network Security, Computer Architecture, Data Mining}
-            \resumeItemListEnd
-    \resumeSubHeadingListEnd
+\resumeSubheading
+{University of Mumbai -- Thadomal Shahani Engineering College}{Aug 2019 - May 2023}
+{Bachelor of Engineering, Information Technology}{Mumbai, India}
+\resumeItemListStart
+\resumeItem{Courses: Computer Architecture, OS, DBMS, DSA, Computer Networks, Network Security, Data Mining}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 \vspace{-20pt}
 
 
 %-----------EXPERIENCE-----------
 \section{Experience}
-    \resumeSubHeadingListStart
-    \vspace{-2pt}
+\resumeSubHeadingListStart
+\vspace{-2pt}
 
-            \resumeSubheading
-            {Graduate Research Assistant - Advisor: Prof. Dongyoon Lee}{May 2024 -- Present}
-            {GPU/CPU Profiling - Energy Flamegraphs}{New York, US}
-            \resumeItemListStart
-                \resumeItem{Developed a software solution that captures CPU call stacks and power consumption data using PowerAPI, which is utilized to generate Energy Flamegraphs.}
-                \resumeItem{Creating a tool to gather GPU API and kernel launch traces, along with power data via CUPTI and NVML, for the creation of Energy Flamegraphs.}
-            \resumeItemListEnd
-        \vspace{-3pt}
-        
-        \resumeSubheading
-            {Software Intern}{Jun 2021 -- Aug 2021}
-            {Suven Consultants}{Mumbai, India}
-            \resumeItemListStart
-                \resumeItem{Collaborated on two Open Source Java projects: Home Inventory and Loan Management tool.}
-                \resumeItem{Used \textbf{Printable interface} to generate printable reports in PDF format using Java AWT and Graphics Library.}
-                \resumeItem{Used SQLite3, JavaFX, and Java Swing components.}
-            \resumeItemListEnd
-        \vspace{-3pt}
-    \resumeSubHeadingListEnd
+\resumeSubheading
+{Graduate Research Assistant - Advisor: Prof. Dongyoon Lee}{May 2024 -- Present}
+{GPU/CPU Profiling - Energy Flamegraphs}{New York, US}
+\resumeItemListStart
+\resumeItem{
+  Developed a tool using linux perf\_events and PowerAPI to trace CPU call chains and monitor power consumption, generating both CPU and energy \href{https://www.brendangregg.com/flamegraphs.html}{flamegraphs} from the same execution trace.
+}
+\resumeItem{
+  Currently developing a tool to collect GPU API and kernel launch traces, along with power data, using CUPTI and NVML for the creation of Energy Flamegraphs.
+}
+\resumeItemListEnd
+\vspace{-3pt}
+
+\resumeSubheading
+{Software Intern}{Jun 2021 -- Aug 2021}
+{Suven Consultants}{Mumbai, India}
+\resumeItemListStart
+\resumeItem{Collaborated on a Home Inventory and Loan Management tool using Java, SQLite3, JavaFX, and Java Swing components.}
+\resumeItem{Integrated \textbf{Printable interface} to generate printable reports in PDF format using Java AWT and Graphics Library.}
+\resumeItemListEnd
+\vspace{-3pt}
+\resumeSubHeadingListEnd
 \vspace{-18pt}
 
 
 %-----------SKILLS-----------
 
 \section{Skills}
-    \vspace{-4pt}
-    \begin{itemize}[leftmargin=0.2in, label={}]
-        {\item{
-            \begin{tabular}{ l@{\hskip 0.2in} l }
-                 \textbf{Languages}: C, C++, Java, Python, JS, Verilog & \textbf{Web}: React.js, Node.js, Flask, HTML, CSS, JS  \\ 
-                 \textbf{Databases}: PostgreSQL, MySQL, MongoDB & \textbf{Platforms}: GitHub, Firebase, Heroku \\  
-                 \textbf{Tools}: Git, qemu, GTKWave & \textbf{CI/CD}: GitHub Actions
-            \end{tabular}
+\vspace{-4pt}
+\begin{itemize}[leftmargin=0.2in, label={}]
+  {\item{
+        \begin{tabular}{ l@{\hskip 0.2in} l }
+          \textbf{Languages}: C, C++, Java, Python, JS, Verilog & \textbf{Web}: React.js, Node.js, Flask, HTML, CSS, JS \\
+          \textbf{Databases}: PostgreSQL, MySQL, MongoDB        & \textbf{Platforms}: GitHub, Firebase, Heroku          \\
+          \textbf{Tools}: Git, qemu, perl, bash, GTKWave        & \textbf{CI/CD}: GitHub Actions
+        \end{tabular}
         }}
-    \end{itemize}
+\end{itemize}
 \vspace{-22pt}
 
-
-% \href{https://expense-tracker03.herokuapp.com}{Web app},
 %-----------PROJECTS-----------
 \section{Projects and Research}
-    \vspace{-7pt}
-    \resumeSubHeadingListStart
+\vspace{-7pt}
+\resumeSubHeadingListStart
 
-        % \resumeProjectHeading
-        %     {\textbf{Accessibility for People Living in Affordable Housing} $|$ \emph{Flask, HTML, CSS, D3.js}}{Apr 2024 -- May 2024}
-        %     \resumeItemListStart
-        %         \resumeItem{Implemented asynchronous disk logging protocol, achieving a \textbf{94\% improvement} in \textbf{write syscall latency}.}
-        %         \resumeItem{Added small file support with file type conversion handling. Achieved a \textbf{reduction of 29\% and 91\% disk IO} requests with unchanged logging and new logging protocol respectively.}
-        %         \resumeItem{Implemented \textbf{ftruncate()} syscall for file truncation and seamless transition between "small" and regular files.}
-        %     \resumeItemListEnd
-        % \vspace{-19pt}
+\resumeProjectHeading
+{\textbf{Computer Architecture - \href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RV64IM - RISCV} - In-Order Pipeline} $|$ \emph{Verilog, GTKWave}}{Jun 2024 -- Present}
+\resumeItemListStart
+\resumeItem{Designed a five + stage in-order pipeline for RV64IM spec extension which talks to the physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{AXI4 protocol}.}
+\resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
+\resumeItem{Added branch prediction, Set-Associative cache, and support for load/stores and ECALL instructions with pipeline flush.}
+\resumeItemListEnd
+\vspace{-17pt}
 
-        \resumeProjectHeading
-            {\textbf{Computer Architecture - \href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RV64IM - RISCV} - In-Order Pipeline} $|$ \emph{Verilog, GTKWave}}{Jun 2024 -- Present}
-            \resumeItemListStart
-                \resumeItem{Designed a five + stage in-order pipeline for RV64IM specs which talks to physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{AXI4 protocol}.}
-                \resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
-                \resumeItem{Created a functional RISCV processor with a Set-Associative cache and support for load/stores and ECALL instruction with pipeline flush.}
-            \resumeItemListEnd
-        \vspace{-17pt}
+\resumeProjectHeading
+{\textbf{Kernel Programming - File Systems} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
+\resumeItemListStart
+\resumeItem{
+  Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{xv6}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
+}
+\resumeItem{
+  Implemented small file support with file type conversion handling, optimizing disk space utilization and reducing disk I/O.
 
-         \resumeProjectHeading
-            {\textbf{Kernel Programming - File Systems} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
-            \resumeItemListStart
-                \resumeItem{Designed an asynchronous disk logging protocol for xv6, enhancing the write efficiency, resulting in a 94\%  latency reduction.}
-                \resumeItem{Introduced small file support with file type conversion handling, reducing disk IO requests with unchanged logging protocol by 29\% and reducing disk IO requests with the new logging protocol by 91\%.}
-                \resumeItem{Implemented ftruncate() syscall for file truncation and seamless transition between "small" and regular files.}
-            \resumeItemListEnd
-        \vspace{-17pt}
-    
-        \resumeProjectHeading
-            {\textbf{\normalsize{Distributed Systems - \href{https://raft.github.io/raft.pdf}{Raft} Implementation}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
-            \resumeItemListStart
-                \resumeItem{Created a persistent linearizable key-value store utilizing the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.}
-                \resumeItem{Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.}
-                \resumeItem{Implemented a versioned key-value store that supports cross-shard Transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
-            \resumeItemListEnd
-        \vspace{-17pt}
+}
+\resumeItem{
+  Implemented ftruncate() syscall for file truncation and transition between "small" and regular files.
+}
+\resumeItemListEnd
+\vspace{-17pt}
 
-        \resumeProjectHeading
-            {\textbf{\normalsize{BackGen - Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Aug 2023}
-            \resumeItemListStart
-                \resumeItem{Developed a software tool that automates the process of writing backend code for web applications.}
-                \resumeItem{Creates a structure for data models and RESTful API endpoints, and generates executable code for the same in Golang.}
-                \resumeItem{Generates approximately 48\% of the code. (Result evaluated for creating a backend for a simple Todo application.)}
-            \resumeItemListEnd
-        \vspace{-17pt}
+\resumeProjectHeading
+{\textbf{\normalsize{Distributed Systems - \href{https://raft.github.io/raft.pdf}{Raft} Implementation}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
+\resumeItemListStart
+\resumeItem{Created a persistent linearizable key-value store utilizing the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.}
+\resumeItem{Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.}
+\resumeItem{Implemented a versioned key-value store that supports cross-shard Transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
+\resumeItemListEnd
+\vspace{-17pt}
 
-        % \resumeProjectHeading
-        %     {\textbf{\normalsize{Maa-Sampati Marble and Granites}} $|$ \emph{React.js, CSS, TypeScript, Firebase, Flutter} $|$ \href{https://github.com/PranavDani/maa-sampati}{GitHub}}{Jul 2021 -- Oct 2021}
-        %     \resumeItemListStart
-        %         \resumeItem{Architected an easy-to-use \textbf{E-commerce platform} for creating Granites and Marble quotations using React.js.}
-        %         \resumeItem{Utilized REST APIs in the web app to interact with Firebase for storing orders.}
-        %     \resumeItemListEnd
-        % \vspace{-17pt}
+\resumeProjectHeading
+{\textbf{\normalsize{BackGen - Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Aug 2023}
+\resumeItemListStart
+\resumeItem{Developed a software tool that helps with the process of writing repetitive backend code for web applications.}
+\resumeItem{Creates data models and RESTful API endpoints, and generates executable code for the same in Golang.}
+\resumeItem{Generates approximately 48\% of the code. (Result evaluated for creating a backend for a simple Todo application.)}
+\resumeItemListEnd
+\vspace{-17pt}
 
-        \resumeProjectHeading
-            {\textbf{\normalsize{Expense Tracker}} $|$ \emph{Flask, PostgreSQL, Heroku, HTML, CSS, JS} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
-            \resumeItemListStart
-                \resumeItem{Designed and built a web app for recording and managing personal expenses with support for creating bulk expenses and exporting user data in CSV and Excel formats using Flask and PostgreSQL and hosted on Heroku.}
-                \resumeItem{Provides the functionality to create personalized budgets based on multiple categories.}
-            \resumeItemListEnd       
-        
-    \resumeSubHeadingListEnd
+\resumeProjectHeading
+{\textbf{\normalsize{Expense Tracker}} $|$ \emph{Flask, PostgreSQL, Heroku, HTML, CSS, JS} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
+\resumeItemListStart
+\resumeItem{Designed and built a web app for recording and managing personal expenses with support for creating bulk expenses and exporting user data in CSV and Excel formats using Flask and PostgreSQL and hosted on Heroku.}
+\resumeItem{Provides the functionality to create personalized budgets based on multiple categories.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
 \vspace{-20pt}
-
-
-
-%-----------PUBLICATION-----------
-% \section{Publications}
-%     \vspace{-8.5pt}
-%     \resumeSubHeadingListStart
-        
-%         \vspace{-3pt}
-%     \resumeSubHeadingListEnd
-% \vspace{-15pt}
-
-
 
 %-----------EXTRACURRICULAR ACTIVITY-----------
 \section{Extracurricular Activity}
-    \vspace{-7pt}
-    \resumeSubHeadingListStart
-        \resumeProjectHeading
-            {\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 - present}
-            \resumeItemListStart
-                \resumeItem{Hosted 200+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} sessions, organized two in-person \href{https://meetup.ourtech.community}{OTC MeetUp} events with 60+ attendees.}
-                 % involving technical discussions, project showcases, and talks
-            \resumeItemListEnd
-        \vspace{-18pt}
-
-        % \resumeProjectHeading
-        %     {\textbf{\normalsize{Google Developer Student Clubs TSEC}} $|$ \emph{Core Team Member}}{Aug 2021 -- Jul 2022}
-        %     \resumeItemListStart
-        %         \resumeItem{Involved with organizing and planning multiple technical events and maintaining a community with over 500 students.}
-        %     \resumeItemListEnd
-        % \vspace{-18pt}
-
-        % \resumeProjectHeading
-        %     {\textbf{\normalsize{ISTE-TSEC}} $|$ \emph{Senior Committee Member}}{Jul 2021 -- Jun 2022}
-        %     \resumeItemListStart
-        %         \resumeItem{Organized three major events with multiple technical events.}
-        %         \resumeItem{Conducted coding challenges, workshops, and competitive coding contests for students.}
-        %     \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
+\vspace{-7pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 - present}
+\resumeItemListStart
+\resumeItem{Hosted 300+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} sessions, organized two in-person \href{https://meetup.ourtech.community}{OTC MeetUp} events with 60+ attendees.}
+\resumeItemListEnd
+\vspace{-18pt}
+\resumeSubHeadingListEnd
 \vspace{-8pt}
 
 \end{document}

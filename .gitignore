@@ -1,0 +1,40 @@
+# LaTeX files
+*.aux
+*.log
+*.synctex.gz
+
+# LaTeX build output
+*.dvi
+*.fdb_latexmk
+*.fls
+*.out
+*.toc
+*.mst
+*.pdf
+
+# LaTeX editor temporary files
+*.swp
+*.synctex(busy)
+*.synctex.gz(busy)
+*.synctex.gz(busy_uncompressed)
+*.synctex(busy_uncompressed)
+*.pdfsync
+
+# LaTeX auto-generated files
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# LaTeX generated directories
+_build/
+
+.vscode
