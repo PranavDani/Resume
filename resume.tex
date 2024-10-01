@@ -91,7 +91,7 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \vspace{-2pt}\textbf{#1} & \textbf{\small #2} \\
+      \vspace{-2pt}\textbf{#1} & \small #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -106,7 +106,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
+      \small#1 & \small #2\\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -150,10 +150,10 @@
 \section{Education}
 \resumeSubHeadingListStart
 \resumeSubheading
-{SUNY -- Stony Brook University}{Aug 2023 - May 2025}
+{SUNY -- Stony Brook University}{Aug 2023 - May 2025 (exp)}
 {Master of Science, Computer Science }{New York, USA}
 \resumeItemListStart
-\resumeItem{Courses: Computer Architecture, OS, Distributed Systems, System Security, Theory of Databases, Analaysis of algorithms}
+\resumeItem{Courses: Computer Architecture, OS, Distributed Systems, System Security, Theory of Databases, Analaysis of Algorithms}
 \vspace{-2pt}
 \resumeItem{Teaching Assistant: (CSE - 316) Fundamentals of Software Development}
 \resumeItemListEnd
@@ -179,7 +179,7 @@
 {GPU/CPU Profiling - Energy Flamegraphs}{New York, US}
 \resumeItemListStart
 \resumeItem{
-  Developed an Energy Flamegraph tool using Linux perf\_events and PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy \href{https://www.brendangregg.com/flamegraphs.html}{flamegraphs} from the same execution trace.
+  Developed an Energy Flamegraph tool using Linux perf\_events and modifying PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy flamegraphs from the same execution trace.
 }
 \resumeItem{
   Currently developing a tool to collect GPU API and kernel launch traces, along with power consumption data, using CUPTI and NVML to generate Energy Flamegraphs.
@@ -192,7 +192,7 @@
 {Suven Consultants}{Mumbai, India}
 \resumeItemListStart
 \resumeItem{Collaborated on a Home Inventory and Loan Management tool using Java, SQLite3, JavaFX, and Java Swing components.}
-\resumeItem{Integrated \textbf{Printable interface} to generate printable reports in PDF format using Java AWT and Graphics Library.}
+\resumeItem{Integrated Printable interface to generate printable reports in PDF format using Java AWT and Graphics Library.}
 \resumeItemListEnd
 \vspace{-3pt}
 \resumeSubHeadingListEnd
@@ -206,7 +206,7 @@
 \begin{itemize}[leftmargin=0.2in, label={}]
   {\item{
         \begin{tabular}{ l@{\hskip 0.2in} l }
-          \textbf{Languages}: C, C++, Java, Python, JS, Verilog & \qquad \textbf{Tools}: qemu, perl, bash, GTKWave, Git \\
+          \textbf{Languages}: C, C++, Verilog, Java, Python     & \qquad \textbf{Tools}: QEMU, Perl, Bash, GTKWave, Git \\
           \textbf{Databases}: PostgreSQL, MySQL, MongoDB        & \qquad \textbf{Platforms}: GitHub, Firebase, Heroku   \\
           \textbf{Web}: React.js, Node.js, Flask, HTML, CSS, JS & \qquad \textbf{CI/CD}: GitHub Actions
         \end{tabular}
@@ -220,7 +220,7 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{Computer Architecture - \href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RV64IM - RISCV} - CPU} $|$ \emph{Verilog, GTKWave}}{Jun 2024 -- Present}
+{\textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} CPU - RV64IM} $|$ \emph{Verilog, GTKWave}}{Jun 2024 -- Present}
 \resumeItemListStart
 \resumeItem{Designed a five + stage in-order pipeline for RV64IM spec extension which talks to the physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{AXI4 protocol}.}
 \resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
@@ -229,7 +229,7 @@
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{Kernel Programming - File System} $|$ \emph{C, qemu}}{Mar 2024 -- May 2024}
+{\textbf{Improved xv6 File System} $|$ \emph{C, QEMU}}{Mar 2024 -- May 2024}
 \resumeItemListStart
 \resumeItem{
   Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{xv6}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
@@ -245,11 +245,11 @@
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{Distributed Systems - \href{https://raft.github.io/raft.pdf}{Raft} Implementation - Consensus Algorithm}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
+{\textbf{\normalsize{\href{https://raft.github.io/raft.pdf}{Raft} Implementation - Consensus Algorithm}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
 \resumeItemListStart
 \resumeItem{Created a persistent linearizable key-value store using the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.}
 \resumeItem{Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.}
-\resumeItem{Implemented a versioned key-value store that supports cross-shard Transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
+\resumeItem{Implemented a versioned key-value store that supports cross-shard transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
 \resumeItemListEnd
 \vspace{-17pt}
 
@@ -277,9 +277,9 @@
 \vspace{-7pt}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 - present}
+{\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 - Present}
 \resumeItemListStart
-\resumeItem{Hosted 300+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} sessions, organized two in-person \href{https://meetup.ourtech.community}{OTC MeetUp} events with 60+ attendees.}
+\resumeItem{Hosted 300+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} technical discussions, organized two in-person \href{https://meetup.ourtech.community}{OTC MeetUp} events with 60+ attendees.}
 \resumeItemListEnd
 \vspace{-18pt}
 \resumeSubHeadingListEnd
