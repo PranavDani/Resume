@@ -155,7 +155,7 @@
 \resumeItemListStart
 \resumeItem{Courses: Computer Architecture, OS, Distributed Systems, System Security, Theory of Databases, Analaysis of Algorithms}
 \vspace{-2pt}
-\resumeItem{Teaching Assistant: Fundamentals of Software Development}
+\resumeItem{Teaching Assistant: CSE 316: Fundamentals of Software Development \textit{(Course Instructor: Prof. Christopher Kane)}}
 \resumeItemListEnd
 \vspace{-3pt}
 
@@ -168,22 +168,6 @@
 \resumeSubHeadingListEnd
 \vspace{-18pt}
 
-
-%-----------SKILLS-----------
-
-\section{Technical Skills}
-% \vspace{-4pt}
-\begin{itemize}[leftmargin=0.2in, label={}]
-  {\item{
-        \begin{tabular}{ l@{\hskip 0.2in} l }
-          \textbf{Languages and Databases}: C, C++, Java, Python, Verilog, PostgreSQL, MySQL, MongoDB                 \\
-          \textbf{Tools and Platforms}: Git, GitHub, Perl, Bash, QEMU, GTKWave, Firebase, Heroku, Unix, Linux, Docker \\
-          \textbf{Web and CI/CD}: React.js, Node.js, Flask, HTML, CSS, JS, GitHub Actions,
-        \end{tabular}
-        }}
-\end{itemize}
-\vspace{-18pt}
-
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
@@ -194,11 +178,11 @@
 {Energy Flamegraphs}{New York, US}
 \resumeItemListStart
 \resumeItem{
-  Built a CPU Energy Flamegraph tool using Linux perf\_events and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor power consumption per cgroup, enhancing energy efficiency analysis for developers.
+  Engineered a CPU Energy Flamegraph tool using Linux perf\_events and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor power consumption per cgroup, enhancing energy efficiency analysis for developers.
 }
 % Developed an Energy Flamegraph tool using Linux perf\_events and modifying PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy flamegraphs from the same execution trace.
 \resumeItem{
-  Developed a GPU Energy Flamegraph tool using CUPTI and NVML to monitor GPU power consumption per kernel, enhancing GPU power usage insights for optimization.
+  Crafted a GPU Energy Flamegraph tool using CUPTI and NVML to monitor GPU power consumption per kernel, enhancing GPU power usage insights for optimization.
 }
 % Developed a tool to collect GPU API and kernel launch traces, along with power consumption data, using CUPTI and NVML, which improved the generation of Energy Flamegraphs for better analysis of GPU energy usage.
 \resumeItemListEnd
@@ -208,7 +192,7 @@
 {Software Intern}{Jun 2021 -- Aug 2021}
 {Suven Consultants}{Mumbai, India}
 \resumeItemListStart
-\resumeItem{Developed a Home Inventory and Loan Management tool using Java and SQLite3; gained 150+ active users in the first month.}
+\resumeItem{Devised a Home Inventory and Loan Management tool using Java and SQLite3; gained 150+ active users in the first month.}
 \resumeItem{Integrated Printable interface to generate PDF reports using Java AWT and Graphics Library, enhancing document accessibility.}
 \resumeItemListEnd
 \vspace{-3pt}
@@ -221,38 +205,38 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} CPU - RV64IM} $|$ \emph{\textbf{Verilog, GTKWave, C}}}{Jun 2024 -- Oct 2024}
+{\textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} CPU - RV64IM Implementation} $|$ \emph{\textbf{Verilog, GTKWave, C}}}{Jun 2024 -- Oct 2024}
 \resumeItemListStart
-\resumeItem{Designed a five + stage in-order pipeline for RV64IM spec extension which talks to the physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
+\resumeItem{Designed a synthesizable multi-cycle in-order pipeline RISC-V processor which talks to the physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
 \resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
-\resumeItem{Added branch prediction, Set-Associative cache, and support for load/stores and ECALL instructions with pipeline flush.}
+\resumeItem{Simulated branch prediction, Set-Associative cache, load/stores and ECALL instructions with pipeline flush.}
 \resumeItemListEnd
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{Improved xv6 File System} $|$ \emph{\textbf{C, QEMU}}}{Mar 2024 -- May 2024}
+{\textbf{Enhanced xv6 File System: Optimized Logging and Small File Support} $|$ \emph{\textbf{C, QEMU}}}{Mar 2024 -- May 2024}
 \resumeItemListStart
 \resumeItem{
-  Built a disk logging protocol targetting in-memory buffers and disk writes, reducing disk write latency by 94\%.
+  Constructed a disk logging protocol targetting in-memory buffers and disk writes, reducing disk write latency by 94\%.
 }
 % Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
 \resumeItem{
   Added small file support with file type conversion, optimizing disk space utilization and reducing disk I/O by 95\% for files < 52B.
 }
 \resumeItem{
-  Implemented \textit{ftruncate()} syscall for file truncation and automatic transition between "small" and regular files.
+  Incorporated \textit{ftruncate()} syscall for file truncation and automatic transition between "small" and regular files.
 }
 \resumeItemListEnd
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{\href{https://raft.github.io/raft.pdf}{Raft} Implementation - Consensus Algorithm}} $|$ \emph{\textbf{C++}}}{Aug 2023 -- Dec 2023}
+{\textbf{\normalsize{Distributed Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{\textbf{C++}}}{Aug 2023 -- Dec 2023}
 \resumeItemListStart
-\resumeItem{Built a persistent key-value store using Raft for leader election and data replication. Added snapshotting for quick revcovery.}
+\resumeItem{Architected a persistent k-v store using Raft for leader election and data replication. Added snapshotting for quick revcovery.}
 % Created a persistent linearizable key-value store using the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.
-\resumeItem{Implemented sharding with consistent hashing for efficient data distribution and automated partition rebalancing.}
+\resumeItem{Executed sharding with consistent hashing for efficient data distribution and automated partition rebalancing.}
 % Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.
-\resumeItem{Developed a versioned key-value store that supports cross-shard transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
+\resumeItem{Formulated a versioned key-value store that supports cross-shard transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
 \resumeItemListEnd
 \vspace{-17pt}
 
@@ -268,12 +252,27 @@
 \resumeProjectHeading
 {\textbf{\normalsize{Expense Tracker}} $|$ \emph{\textbf{Flask, PostgreSQL, Heroku, HTML, CSS, JS}} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
 \resumeItemListStart
-\resumeItem{Built an expense tracker web app with bulk expense creation and CSV/Excel export, gaining 100+ users in the first month.
+\resumeItem{Built an expense tracker web app with bulk expense creation and CSV/Excel export, attracting 100+ users within first month.
 }
 \resumeItem{Enabled personalized budget creation across multiple categories, enhancing flexibility in expense tracking.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
+\vspace{-18pt}
+
+%-----------SKILLS-----------
+
+\section{Technical Skills}
+% \vspace{-4pt}
+\begin{itemize}[leftmargin=0.2in, label={}]
+  {\item{
+        \begin{tabular}{ l@{\hskip 0.2in} l }
+          \textbf{Languages and Databases}: C, C++, Java, Python, Verilog, PostgreSQL, MySQL, MongoDB                 \\
+          \textbf{Tools and Platforms}: Unix, Linux, Docker, Perl, Bash, QEMU, GTKWave, Git, GitHub, Firebase, Heroku \\
+          \textbf{Web and CI/CD}: React.js, Node.js, Flask, HTML, CSS, JS, GitHub Actions,
+        \end{tabular}
+        }}
+\end{itemize}
 \vspace{-18pt}
 
 %-----------EXTRACURRICULAR ACTIVITY-----------
