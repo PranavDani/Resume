@@ -207,9 +207,9 @@
 \resumeProjectHeading
 {\textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} CPU - RV64IM Implementation} $|$ \emph{\textbf{Verilog, GTKWave, C}}}{Jun 2024 -- Oct 2024}
 \resumeItemListStart
-\resumeItem{Designed a synthesizable multi-cycle in-order pipeline RISC-V processor which talks to the physical memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
+\resumeItem{Designed a synthesizable multi-cycle in-order pipeline RISC-V processor which communicates with memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
 \resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
-\resumeItem{Simulated branch prediction, Set-Associative cache, load/stores and ECALL instructions with pipeline flush.}
+\resumeItem{Simulated branch prediction, set-associative cache, load/stores and ECALL instructions with pipeline flush.}
 \resumeItemListEnd
 \vspace{-17pt}
 
@@ -217,7 +217,7 @@
 {\textbf{Enhanced xv6 File System: Optimized Logging and Small File Support} $|$ \emph{\textbf{C, QEMU}}}{Mar 2024 -- May 2024}
 \resumeItemListStart
 \resumeItem{
-  Constructed a disk logging protocol targetting in-memory buffers and disk writes, reducing disk write latency by 94\%.
+  Constructed a disk logging protocol targeting in-memory buffers and disk writes, reducing disk write latency by 94\%.
 }
 % Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
 \resumeItem{
@@ -232,7 +232,7 @@
 \resumeProjectHeading
 {\textbf{\normalsize{Distributed Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{\textbf{C++}}}{Aug 2023 -- Dec 2023}
 \resumeItemListStart
-\resumeItem{Architected a persistent k-v store using Raft for leader election and data replication. Added snapshotting for quick revcovery.}
+\resumeItem{Architected a persistent k-v store using Raft for leader election and data replication. Added snapshotting for quick recovery.}
 % Created a persistent linearizable key-value store using the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.
 \resumeItem{Executed sharding with consistent hashing for efficient data distribution and automated partition rebalancing.}
 % Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.
@@ -243,7 +243,7 @@
 \resumeProjectHeading
 {\textbf{\normalsize{BackGen - GoLang Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Jan 2023 -- Aug 2023}
 \resumeItemListStart
-\resumeItem{Developed a software tool that helps with the process of writing repetitive backend code for web applications.}
+\resumeItem{Developed a software tool that facilitates the process of writing repetitive backend code for web applications.}
 \resumeItem{Creates data models and RESTful APIs in GoLang, reducing development time by 50\%.}
 \resumeItem{Generates approximately 48\% of the code. (Result evaluated for creating a backend for a simple Todo application.)}
 \resumeItemListEnd
