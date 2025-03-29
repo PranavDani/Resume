@@ -34,7 +34,7 @@
 
 %----------FONT OPTIONS----------
 % sans-serif
-% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{FiraSans}1
 % \usepackage[sfdefault]{roboto}
 % \usepackage[sfdefault]{noto-sans}
 \usepackage[default]{sourcesanspro}
@@ -56,7 +56,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.4in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.4in}
 \setlength{\footskip}{4.08003pt}
 
@@ -169,16 +169,16 @@
 \vspace{-18pt}
 
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Work Experience}
 \resumeSubHeadingListStart
 % \vspace{-2pt}
 
 \resumeSubheading
-{GRA: GPU and CPU Profiling - Advisor: Prof. Dongyoon Lee}{May 2024 -- Present}
-{Energy Flamegraphs}{New York, US}
+{Graduate Research Assistant: GPU and CPU Profiling}{May 2024 -- Present}
+{Stony Brook University}{New York, US}
 \resumeItemListStart
 \resumeItem{
-  Engineered a CPU Energy Flamegraph tool using Linux perf\_events and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor power consumption per cgroup, enhancing energy efficiency analysis for developers.
+  Engineered a CPU Energy Flamegraph tool using Linux perf\_events, eBPF and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor power consumption per cgroup, enhancing energy efficiency analysis for developers.
 }
 % Developed an Energy Flamegraph tool using Linux perf\_events and modifying PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy flamegraphs from the same execution trace.
 \resumeItem{
@@ -193,10 +193,20 @@
 {Suven Consultants}{Mumbai, India}
 \resumeItemListStart
 \resumeItem{Devised a Home Inventory and Loan Management tool using Java and SQLite3; gained 150+ active users in the first month.}
-\resumeItem{Integrated Printable interface to generate PDF reports using Java AWT and Graphics Library, enhancing document accessibility.}
+\resumeItem{Implemented an advanced Printable interface with Java AWT and the Graphics Library to generate professional PDF reports in under 2 seconds per report—boosting document accessibility by 75\% and processing over 150 reports weekly.}
 \resumeItemListEnd
 \vspace{-3pt}
 \resumeSubHeadingListEnd
+% \vspace{-18pt}
+
+%-----------SKILLS-----------
+
+% \section{Technical Skills}
+% \begin{itemize}[leftmargin=0.2in, label={}]
+%   \item \textbf{Languages and Databases:} C, C++, Java, Python, Go, System Verilog, PostgreSQL, MySQL, MongoDB\\
+%         \textbf{Tools and Platforms:} Unix, Linux, Docker, Perl, Bash, QEMU, GTKWave, Git, GitHub, Kubernetes, Firebase, Heroku\\
+%         \textbf{Web and CI/CD:} React.js, Node.js, Flask, HTML, CSS, JS, GitHub Actions, AWS-EC2, S3
+% \end{itemize}
 % \vspace{-18pt}
 
 %-----------PROJECTS-----------
@@ -205,32 +215,29 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} CPU - RV64IM Implementation}\hspace{0pt}$|$\hspace{0pt}\emph{\textbf{Verilog, GTKWave, C}}}{Jun 2024 -- Oct 2024}
+{\textbf{Computer Architecture} -- \textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} Processor} $|$ \emph{System Verilog, GTKWave, C}}{Jun 2024 -- Oct 2024}
 \resumeItemListStart
-\resumeItem{Designed a synthesizable multi-cycle in-order pipeline RISC-V processor which communicates with memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
-\resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls on RAW data hazards.}
-\resumeItem{Simulated branch prediction, set-associative cache, load/stores and ECALL instructions with pipeline flush.}
+\resumeItem{Designed a synthesizable multi-cycle in-order RISC-V processor which communicates with memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
+\resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls syscalls.}
+\resumeItem{Integrated branch prediction, 2 set-associative L1 caches, load/stores and ECALL instructions with pipeline flush.}
 \resumeItemListEnd
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{Enhanced xv6 File System: Optimized Logging and Small File Support}\hspace{0pt}$|$\hspace{0pt}\emph{\textbf{C, QEMU}}}{Mar 2024 -- May 2024}
+{\textbf{Kernel Programming} -- \textbf{File Systems} $|$ \emph{C, QEMU}}{Mar 2024 -- May 2024}
 \resumeItemListStart
 \resumeItem{
-  Constructed a disk logging protocol targeting in-memory buffers and disk writes, reducing disk write latency by 94\%.
+  Constructed an asynchronous journaling protocol in xv6, reducing disk write() latency by up to 94\%.
 }
 % Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
 \resumeItem{
-  Added small file support with file type conversion, optimizing disk space utilization and reducing disk I/O by 95\% for files < 52B.
-}
-\resumeItem{
-  Incorporated \textit{ftruncate()} syscall for file truncation and automatic transition between "small" and regular files.
+  Added small file support with file type conversion, optimizing disk space utilization and reducing disk I/O by 95\% for files \textless{} 52B.
 }
 \resumeItemListEnd
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{Distributed Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}}\hspace{0pt}$|$\hspace{0pt}\emph{\textbf{C++}}}{Aug 2023 -- Dec 2023}
+{\textbf{\normalsize{Distributed Systems -- Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
 \resumeItemListStart
 \resumeItem{Architected a persistent k-v store using Raft for leader election and data replication. Added snapshotting for quick recovery.}
 % Created a persistent linearizable key-value store using the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.
@@ -241,7 +248,19 @@
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{BackGen - GoLang Backend Generator}}\hspace{0pt}$|$\hspace{0pt}\emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Jan 2023 -- Aug 2023}
+{\textbf{\normalsize{Unix Systems Programming Projects}} $|$ C, C++, Python, Perl, Bash, QEMU}{Jan 2023 -- Present}
+\resumeItemListStart
+\resumeItem{\textbf{KV Store}: A multithreaded key-value store with distributed transactions, supporting multiple clients and persistence.}
+\resumeItem{
+  \textbf{\textit{ftruncate()}}: A Unix system call for adjusting the file size—either increasing or decreasing it.
+}
+\resumeItem{\textbf{Locks:} Wrote an RCU-based lock supporting concurrent readers and a single writer, ensuring atomic access to shared resources.}
+\resumeItem{\textbf{GPU Flamegraph}: A tool to visualize GPU (CUDA) kernel execution and power consumption through \textit{NVML} and \textit{nsys}.}
+\resumeItemListEnd
+\vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{BackGen - GoLang Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Jan 2023 -- Aug 2023}
 \resumeItemListStart
 \resumeItem{Developed a software tool that facilitates the process of writing repetitive backend code for web applications.}
 \resumeItem{Creates data models and RESTful APIs in GoLang, reducing development time by 50\%.}
@@ -250,24 +269,23 @@
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{Expense Tracker}}\hspace{0pt}$|$\hspace{0pt}\emph{\textbf{Flask, PostgreSQL, Heroku, HTML, CSS, JS}} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
+{\textbf{\normalsize{Web Projects}} $|$ \emph{React.js, Node.js, Flask, PostgreSQL, Heroku, HTML, CSS, JS, AWS-EC2, S3, SQL}}{Apr 2020 -- Present}
 \resumeItemListStart
-\resumeItem{Built an expense tracker web app with bulk expense creation and CSV/Excel export, attracting 100+ users within first month.
+\resumeItem{{\textbf{\href{https://github.com/PranavDani/Expense-Tracker}{Expense Tracker}} -- Web app for tracking expenses with bulk expense creation and file export, attracting 100+ users in a month.}
 }
-\resumeItem{Enabled personalized budget creation across multiple categories, enhancing flexibility in expense tracking.}
+\resumeItem{\textbf{\href{https://github.com/raunaqpahwa/cse564}{NYC Housing}} -- A d3 based web app for visualizing NYC housing data, enabling users to filter and analyze various parameters.}
+\resumeItem{\textbf{\href{https://github.com/PranavDani/short-terms}{Short-Terms}} -- Chrome extension for summarizing web pages using NLP and Spcay (before GPT).}
 \resumeItemListEnd
 
+% \resumeProjectHeading
+% {\textbf{\normalsize{Expense Tracker}} $|$ \emph{Flask, PostgreSQL, Heroku, HTML, CSS, JS} $|$ \href{https://github.com/PranavDani/Expense-Tracker}{GitHub}}{Apr 2021 -- Jun 2021}
+% \resumeItemListStart
+% \resumeItem{Built an expense tracker web app with bulk expense creation and CSV/Excel export, attracting 100+ users within first month.
+% }
+% \resumeItem{Enabled personalized budget creation across multiple categories, enhancing flexibility in expense tracking.}
+% \resumeItemListEnd
+
 \resumeSubHeadingListEnd
-\vspace{-18pt}
-
-%-----------SKILLS-----------
-
-\section{Technical Skills}
-\begin{itemize}[leftmargin=0.2in, label={}]
-  \item \textbf{Languages and Databases:} C, C++, Java, Python, Go, Verilog, PostgreSQL, MySQL, MongoDB\\
-        \textbf{Tools and Platforms:} Unix, Linux, Docker, Perl, Bash, QEMU, GTKWave, Git, GitHub, Kubernetes, Firebase, Heroku\\
-        \textbf{Web and CI/CD:} React.js, Node.js, Flask, HTML, CSS, JS, GitHub Actions, AWS-EC2, S3
-\end{itemize}
 \vspace{-18pt}
 
 %-----------EXTRACURRICULAR ACTIVITY-----------
@@ -275,9 +293,9 @@
 % \vspace{-7pt}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{\normalsize{Our Tech Community (OTC)}}\hspace{0pt}$|$\hspace{0pt}\normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 -- Present}
+{\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 -- Present}
 \resumeItemListStart
-\resumeItem{Hosted 300+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} technical discussions, organized two in-person \href{https://meetup.ourtech.community}{MeetUp} events with 60+ attendees.}
+\resumeItem{Hosted 400+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} technical discussions, organized two in-person \href{https://meetup.ourtech.community}{MeetUp} events with 70+ attendees.}
 \resumeItemListEnd
 \vspace{-18pt}
 \resumeSubHeadingListEnd
