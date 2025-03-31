@@ -56,7 +56,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.6in}
+\addtolength{\topmargin}{-.7in}
 \addtolength{\textheight}{1.4in}
 \setlength{\footskip}{4.08003pt}
 
@@ -134,14 +134,14 @@
 % \end{tabular*}
 
 \begin{center}
-  {\huge Pranav Dani} \\ \vspace{4pt}
+  {\huge Pranav Dani} \\[4pt]
   \small
-  \faMobile
-  \href{tel:+19344529426}{\raisebox{-0.2\height}\ +1 (934) 451-9426} ~
-  \faGlobe \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com} ~
-  \faGithub \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\  github.com/PranavDani} ~
-  \faLinkedin \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\  linkedin.com/in/pranav-dani} ~
-  \faEnvelope \href{mailto:contact@pranavdani.com}{\raisebox{-0.2\height}\    contact@pranavdani.com}
+  % Mobile on its own line with icon name
+  \textbf{Mobile:} \href{tel:+19344529426}{+1 (934) 451-9426}
+  \quad   \faEnvelope \href{mailto:contact@pranavdani.com}{\raisebox{-0.2\height}\    contact@pranavdani.com}\\
+  \faGithub \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\  github.com/PranavDani} \quad
+  \faLinkedin \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\  linkedin.com/in/pranav-dani} \quad
+  \faGlobe \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com}
   \vspace{-10pt}
 \end{center}
 
@@ -155,18 +155,25 @@
 \resumeItemListStart
 \resumeItem{Courses: Computer Architecture, OS, Distributed Systems, System Security, Theory of Databases, Analaysis of Algorithms}
 \vspace{-2pt}
-\resumeItem{Teaching Assistant: CSE 316: Fundamentals of Software Development \textit{(Course Instructor: Prof. Christopher Kane)}}
+\resumeItem{Teaching Assistant: CSE 316: Fundamentals of Software Development}
 \resumeItemListEnd
 \vspace{-3pt}
 
 \resumeSubheading
 {University of Mumbai -- Thadomal Shahani Engineering College}{Aug 2019 -- May 2023}
 {Bachelor of Engineering, Information Technology}{Mumbai, India}
-\resumeItemListStart
-\resumeItem{Courses: Computer Architecture, OS, DBMS, DSA, Computer Networks, Network Security, Data Mining}
-\resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-18pt}
+% \vspace{-13pt}
+
+%-----------SKILLS-----------
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.2in, label={}]
+  \item \textbf{Languages and Databases:} C, C++, Java, Python, Go, System Verilog; PostgreSQL, MySQL, MongoDB, Firebase\\
+        \textbf{Tools/Web/CI:} Unix/Linux, Docker, QEMU, GTKWave, Kubernetes,  React.js, Node.js, Flask, HTML/CSS/JS, AWS-EC2, S3
+\end{itemize}
+\vspace{-16pt}
+
 
 %-----------EXPERIENCE-----------
 \section{Work Experience}
@@ -195,29 +202,20 @@
 \resumeItem{Devised a Home Inventory and Loan Management tool using Java and SQLite3; gained 150+ active users in the first month.}
 \resumeItem{Implemented an advanced Printable interface with Java AWT and the Graphics Library to generate professional PDF reports in under 2 seconds per report—boosting document accessibility by 75\% and processing over 150 reports weekly.}
 \resumeItemListEnd
-\vspace{-3pt}
+\vspace{-6pt}
 \resumeSubHeadingListEnd
-% \vspace{-18pt}
+% \vspace{-22pt}
 
-%-----------SKILLS-----------
-
-% \section{Technical Skills}
-% \begin{itemize}[leftmargin=0.2in, label={}]
-%   \item \textbf{Languages and Databases:} C, C++, Java, Python, Go, System Verilog, PostgreSQL, MySQL, MongoDB\\
-%         \textbf{Tools and Platforms:} Unix, Linux, Docker, Perl, Bash, QEMU, GTKWave, Git, GitHub, Kubernetes, Firebase, Heroku\\
-%         \textbf{Web and CI/CD:} React.js, Node.js, Flask, HTML, CSS, JS, GitHub Actions, AWS-EC2, S3
-% \end{itemize}
-% \vspace{-18pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-% \vspace{-7pt}
+\vspace{-4pt}
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
 {\textbf{Computer Architecture} -- \textbf{\href{https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf}{RISC-V} Processor} $|$ \emph{System Verilog, GTKWave, C}}{Jun 2024 -- Oct 2024}
 \resumeItemListStart
-\resumeItem{Designed a synthesizable multi-cycle in-order RISC-V processor which communicates with memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}.}
+\resumeItem{Designed a synthesizable multi-cycle in-order RISC-V (RV64IM) processor which communicates with memory over \href{https://developer.arm.com/documentation/ihi0022/latest}{\textbf{AXI4 protocol}}}
 \resumeItem{Implemented an ALU to execute instructions, and interact with reg file, supporting pipeline stalls syscalls.}
 \resumeItem{Integrated branch prediction, 2 set-associative L1 caches, load/stores and ECALL instructions with pipeline flush.}
 \resumeItemListEnd
@@ -240,10 +238,10 @@
 {\textbf{\normalsize{Distributed Systems -- Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
 \resumeItemListStart
 \resumeItem{Architected a persistent k-v store using Raft for leader election and data replication. Added snapshotting for quick recovery.}
-% Created a persistent linearizable key-value store using the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.
 \resumeItem{Executed sharding with consistent hashing for efficient data distribution and automated partition rebalancing.}
-% Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.
 \resumeItem{Formulated a versioned key-value store that supports cross-shard transactions using 2-Phase Locking and 2-Phase Commit with Optimistic Concurrency Control.}
+% Created a persistent linearizable key-value store using the Raft consensus algorithm for leader election and data replication in an asynchronous environment. Implemented log compaction with Snapshots.
+% Engineered sharding using consistent hashing, ensuring efficient data distribution across nodes. Automated partition rebalancing during node joins and departures.
 \resumeItemListEnd
 \vspace{-17pt}
 
@@ -262,19 +260,18 @@
 \resumeProjectHeading
 {\textbf{\normalsize{BackGen - GoLang Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Jan 2023 -- Aug 2023}
 \resumeItemListStart
-\resumeItem{Developed a software tool that facilitates the process of writing repetitive backend code for web applications.}
-\resumeItem{Creates data models and RESTful APIs in GoLang, reducing development time by 50\%.}
-\resumeItem{Generates approximately 48\% of the code. (Result evaluated for creating a backend for a simple Todo application.)}
+\resumeItem{Engineered a GoLang backend generator that generates server code based on REST API spec, reducing dev time by 50\%.}
+\resumeItem{Validated on a Todo application, the tool generates nearly 48\% of the code, significantly streamlining web app development.}
 \resumeItemListEnd
 \vspace{-17pt}
 
 \resumeProjectHeading
 {\textbf{\normalsize{Web Projects}} $|$ \emph{React.js, Node.js, Flask, PostgreSQL, Heroku, HTML, CSS, JS, AWS-EC2, S3, SQL}}{Apr 2020 -- Present}
 \resumeItemListStart
-\resumeItem{{\textbf{\href{https://github.com/PranavDani/Expense-Tracker}{Expense Tracker}} -- Web app for tracking expenses with bulk expense creation and file export, attracting 100+ users in a month.}
+\resumeItem{{\textbf{\href{https://github.com/PranavDani/Expense-Tracker}{\textcolor{black}{Expense Tracker}}} -- Web app for tracking expenses with bulk expense creation and file export, attracting 100+ users in a month.}
 }
-\resumeItem{\textbf{\href{https://github.com/raunaqpahwa/cse564}{NYC Housing}} -- A d3 based web app for visualizing NYC housing data, enabling users to filter and analyze various parameters.}
-\resumeItem{\textbf{\href{https://github.com/PranavDani/short-terms}{Short-Terms}} -- Chrome extension for summarizing web pages using NLP and Spcay (before GPT).}
+\resumeItem{\textbf{\href{https://github.com/raunaqpahwa/cse564}{\textcolor{black}{NYC Housing}}} -- A d3 based web app for visualizing NYC housing data, enabling users to filter and analyze various parameters.}
+\resumeItem{\textbf{\href{https://github.com/PranavDani/short-terms}{\textcolor{black}{Short-Terms}}} -- Chrome extension for summarizing web pages using NLP and Spcay (before GPT).}
 \resumeItemListEnd
 
 % \resumeProjectHeading
@@ -286,19 +283,19 @@
 % \resumeItemListEnd
 
 \resumeSubHeadingListEnd
-\vspace{-18pt}
+\vspace{-12pt}
 
 %-----------EXTRACURRICULAR ACTIVITY-----------
 \section{Extracurricular Activity}
-% \vspace{-7pt}
+\vspace{-4pt}
 \resumeSubHeadingListStart
 \resumeProjectHeading
 {\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 -- Present}
 \resumeItemListStart
 \resumeItem{Hosted 400+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp} technical discussions, organized two in-person \href{https://meetup.ourtech.community}{MeetUp} events with 70+ attendees.}
 \resumeItemListEnd
-\vspace{-18pt}
+% \vspace{-18pt}
 \resumeSubHeadingListEnd
-\vspace{-8pt}
+% \vspace{-8pt}
 
 \end{document}
