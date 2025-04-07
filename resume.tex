@@ -56,7 +56,7 @@
 \addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.4in}
 \setlength{\footskip}{4.08003pt}
 
@@ -173,7 +173,7 @@
 \resumeSubHeadingListStart
 % \vspace{-2pt}
 
-\resumeSubSubheading{\textbf{Graduate Research Assistant} $|$ New York, US}{May 2024 -- Present}
+\resumeSubSubheading{\textbf{Compilers and Operating Systems Lab} $|$ Graduate Research Assistant $|$ New York, US}{May 2024 -- Present}
 \resumeItemListStart
 % Developed an Energy Flamegraph tool using Linux perf\_events and modifying PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy flamegraphs from the same execution trace.
 \resumeItem{
@@ -187,7 +187,7 @@
 \vspace{-3pt}
 
 \resumeSubSubheading
-{\textbf{Software Intern} $|$ Suven Consultants $|$ Mumbai, India}{Jun 2021 -- Aug 2021}
+{\textbf{Suven Consultants} $|$ Software Intern $|$ Mumbai, India}{Jun 2021 -- Aug 2021}
 \resumeItemListStart
 \resumeItem{Devised a Home Inventory and Loan Management tool using Java and SQLite3; gained 150+ users in the first month.}
 \resumeItem{Implemented an advanced Printable interface with Java AWT and the Graphics Library to generate professional PDF reports in under 2 seconds per report—boosting document accessibility by 75\% and processing over 150 reports weekly.}
@@ -218,8 +218,12 @@
 }
 % Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
 \resumeItem{
-  Added optimization for "small files" - optimizing disk space utilization and reducing disk I/O by 95\% for files \textless{} 52B.
+  Added optimization for "small files" - allowing file data (\textless{} 52B) to be stored in the inode, reducing disk I/O by 29\%.
 }
+
+% \resumeItem{
+%   Added optimization for "small files" - optimizing disk space utilization and reducing disk I/O by 95\% for files \textless{} 52B.
+% }
 \resumeItemListEnd
 \vspace{-17pt}
 
