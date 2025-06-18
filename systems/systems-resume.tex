@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Author: Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+%------------------------
+% Original Overleaf template: https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{xcolor}
+\hypersetup{colorlinks,urlcolor=blue}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}1
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+\usepackage{charter}
+% \usepackage{times}
+% \usepackage{helvet}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.4in}
+\setlength{\footskip}{4.08003pt}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that the generated PDF is machine readable/ATS parsable.
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{-2pt}\textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \small #1 & \small #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%------------------z-------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+  {\huge Pranav Dani} \\ \vspace{4pt}
+  \small
+  \href{tel:+19344529426}{\raisebox{-0.2\height}\ +1 (934) 451-9426} $|$
+  \href{mailto:contact@pranavdani.com}{\raisebox{-0.2\height}\    contact@pranavdani.com} $|$
+  \href{https://linkedin.com/in/pranav-dani}{\raisebox{-0.2\height}\  linkedin.com/in/pranav-dani} $|$
+  \href{https://github.com/PranavDani}{\raisebox{-0.2\height}\  github.com/PranavDani} $|$
+  \href{https://pranavdani.com}{\raisebox{-0.1\height}\ pranavdani.com}
+  \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{SUNY -- Stony Brook University}{Aug 2023 -- May 2025}
+{Master of Science, Computer Science}{New York, USA}
+\resumeItemListStart
+\resumeItem{Courses: Computer Architecture, OS, Distributed Systems, System Security, Theory of Databases, Analaysis of Algorithms}
+\resumeItem{Teaching Assistant: CSE 316: Fundamentals of Software Development}
+\resumeItemListEnd
+\vspace{-3pt}
+
+\resumeSubheading
+{University of Mumbai -- Thadomal Shahani Engineering College}{Aug 2019 -- May 2023}
+{Bachelor of Engineering, Information Technology}{Mumbai, India}
+\resumeSubHeadingListEnd
+% \vspace{-13pt}
+
+%-----------SKILLS-----------
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.2in, label={}]
+  \item \textbf{Languages and Databases:} C, C++, Java, Python, Go, SystemVerilog, nasm; PostgreSQL, MySQL, Firebase\\
+        \textbf{Tools and CI:} Unix/Linux, Docker, QEMU, bash, GTKWave, Kubernetes, Git
+\end{itemize}
+\vspace{-16pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+\resumeSubHeadingListStart
+% \vspace{-2pt}
+
+\resumeSubSubheading{\normalsize{\textbf{Compilers and Operating Systems Lab} $|$ Graduate Research Assistant $|$ New York, US}}{May 2024 -- Present}
+\resumeItemListStart
+% Developed an Energy Flamegraph tool using Linux perf\_events and modifying PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy flamegraphs from the same execution trace.
+\resumeItem{
+  Engineered a CPU Energy Flamegraph tool using Linux perf\_events, eBPF and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor power consumption per cgroup, enhancing energy efficiency analysis for developers.
+}
+\resumeItem{
+  Crafted a GPU Energy Flamegraph tool using Nsight Systems and nvidia-smi to monitor GPU power consumption per kernel, enhancing GPU power usage insights for optimization.
+}
+% Developed a tool to collect GPU API and kernel launch traces, along with power consumption data, using CUPTI and NVML, which improved the generation of Energy Flamegraphs for better analysis of GPU energy usage.
+\resumeItemListEnd
+\vspace{-3pt}
+
+\resumeSubSubheading
+{\normalsize{\textbf{Suven Consultants} $|$ Software Intern $|$ Mumbai, India}}{Jun 2021 -- Aug 2021}
+\resumeItemListStart
+\resumeItem{Devised a Home Inventory and Loan Management tool using Java and SQLite3; gained 150+ users in the first month.}
+\resumeItem{Implemented an advanced Printable interface with Java AWT and the Graphics Library to generate professional PDF reports in under 2 seconds per report—boosting document accessibility by 75\% and processing over 150 reports weekly.}
+\resumeItemListEnd
+% \vspace{-6pt}
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\vspace{-4pt}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\normalsize{Bootable x86 Kernel}} $|$ \emph{C, nasm, QEMU}}{Jun 2025 -- Present}
+\resumeItemListStart
+\resumeItem{Developed a bootloader that loads the kernel with round-robin scheduling, interrupt handling, and VGA support.}
+\resumeItem{Implements paging, a basic grow-only heap, and ATA-based disk I/O integrated with a simple file system.}
+\resumeItemListEnd
+\vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Computer Architecture -- RISC-V Processor}} $|$ \emph{SystemVerilog, GTKWave, C}}{Jun 2024 -- Oct 2024}
+\resumeItemListStart
+\resumeItem{Designed a synthesizable multi-cycle RISC-V processor (RV64IM ISA) with branch prediction and stalls.}
+\resumeItem{Integrated 2 set-associative L1 caches, load/stores which uses AXI4 protocol to communicate with the memory.}
+\resumeItemListEnd
+\vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Kernel Programming -- File Systems}} $|$ \emph{C, QEMU}}{Mar 2024 -- May 2024}
+\resumeItemListStart
+\resumeItem{
+  Implemented an asynchronous journaling protocol in xv6, reducing disk write() syscall latency by up to 94\%.
+}
+% Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
+\resumeItem{
+  Added optimization for "small files" - allowing file data (\textless{} 52B) to be stored in the inode, reducing disk I/O by 29\%.
+}
+
+% \resumeItem{
+%   Added optimization for "small files" - optimizing disk space utilization and reducing disk I/O by 95\% for files \textless{} 52B.
+% }
+\resumeItemListEnd
+\vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Distributed Systems -- Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
+\resumeItemListStart
+\resumeItem{Architected a persistent key-value store using Raft for leader election, replication, and snapshotting for fast recovery.}
+\resumeItem{Executed sharding with consistent hashing for efficient data distribution and automated partition rebalancing.}
+% \resumeItem{Optimistic concurrency control using 2-Phase Locking and 2-Phase Commit of versioned KV with cross-shard transaction.}
+\resumeItem{Formulated a versioned key-value store that supports cross-shard transactions using 2-Phase Locking and 2-Phase Commit
+  with Optimistic Concurrency Control.}
+\resumeItemListEnd
+\vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{Unix Systems Programming Projects}} $|$ C, C++, Python, Perl, Bash, QEMU}{Jan 2023 -- Present}
+\resumeItemListStart
+\resumeItem{\textbf{Locks:} RCU-based lock supporting concurrent readers and a single writer, ensuring atomic access to shared resources.}
+\resumeItem{
+  \textbf{Syscall -- \textit{ftruncate()}}: Implemented as Unix system call for adjusting the file size—either increasing or decreasing it.
+}
+\resumeItem{\textbf{KV Store}: A multithreaded key-value store with distributed transactions, supporting multiple clients and persistence.}
+\resumeItem{\textbf{GPU Flamegraph}: A tool to visualize GPU (CUDA) kernel execution and power consumption through \textit{NVML} and \textit{nsys}.}
+\resumeItemListEnd
+\vspace{-17pt}
+
+\resumeProjectHeading
+{\textbf{\normalsize{BackGen - GoLang Backend Generator}} $|$ \emph{ICT4SD $|$ \href{https://link.springer.com/chapter/10.1007/978-981-99-6568-7_34}{Springer}}}{Jan 2023 -- Aug 2023}
+\resumeItemListStart
+\resumeItem{Developed a GoLang backend generator that generates server code based on REST API spec, reducing dev time by 50\%.}
+\resumeItem{Validated on a Todo application, tool generates nearly 48\% of the code, significantly streamlining web app development.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+% \vspace{-26pt}
+
+%-----------EXTRACURRICULAR ACTIVITY-----------
+\section{Extracurricular Activity}
+\vspace{-7pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{\normalsize{Our Tech Community (OTC)}} $|$ \normalfont\href{https://ourtech.community}{ourtech.community} $|$ \emph{Admin}}{May 2022 -- Present}
+\resumeItemListStart
+\resumeItem{Hosted 500+ hours of weekly \href{https://catchup.ourtech.community}{OTC CatchUp}, organized two in-person \href{https://meetup.ourtech.community}{MeetUp} events with 70+ attendees.}
+\resumeItemListEnd
+% \vspace{-18pt}
+\resumeSubHeadingListEnd
+\vspace{-8pt}
+\end{document}

@@ -6,17 +6,19 @@ on:
             - main
         paths:
             - ".github/workflows/**"
+            - "systems/**"
             - CNAME
-            - "index.html"
-            - "resume.tex"
+            - "**.html"
+            - "**.tex"
     pull_request:
         branches:
             - main
         paths:
             - ".github/workflows/**"
+            - "systems/**"
             - CNAME
-            - "index.html"
-            - "resume.tex"
+            - "**.html"
+            - "**.tex"
     workflow_dispatch: # Allows manual execution of workflow
 
 jobs:
@@ -33,11 +35,17 @@ jobs:
             - name: Compile LaTeX document
               uses: xu-cheng/latex-action@v2
               with:
-                  root_file: resume.tex
+                  root_file: |
+                    resume.tex
+                    systems/systems-resume.tex
 
             - name: Post Processing
               run: |
                   mkdir build 
+                  mkdir build/systems
+                  cp systems/*.html build/systems/
+                  cp systems/*.pdf build/systems/
+                  mv build/systems/systems-resume.pdf "build/systems/Pranav Dani Résumé Systems.pdf"
                   cp *.pdf build/ 
                   cp index.html build/
                   cp CNAME build/
