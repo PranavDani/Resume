@@ -44,12 +44,13 @@ jobs:
                   mkdir build 
                   mkdir build/systems
                   cp systems/*.html build/systems/
-                  cp systems/*.pdf build/systems/
+                  cp systems-resume.pdf build/systems/
                   mv build/systems/systems-resume.pdf "build/systems/Pranav Dani Résumé Systems.pdf"
-                  cp *.pdf build/ 
-                  cp index.html build/
+                  cp resume.pdf build/ 
+                  cp *.html build/
                   cp CNAME build/
                   mv "build/resume.pdf" "build/Pranav Dani Résumé.pdf"
+            
             - name: Git add
               run: |
                   git config --global --add safe.directory '*'
