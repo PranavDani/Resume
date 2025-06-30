@@ -211,15 +211,15 @@
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{Computer Architecture -- RISC-V Processor}} $|$ \emph{SystemVerilog, GTKWave, C}}{Jun 2024 -- Oct 2024}
+{\textbf{\normalsize{RISC-V Processor}} $|$ \emph{SystemVerilog, GTKWave, C}}{Jun 2024 -- Oct 2024}
 \resumeItemListStart
-\resumeItem{Designed a synthesizable 6-stage RISC-V processor (RV64IM ISA) with branch prediction and stalls.}
-\resumeItem{Integrated 2 set-associative L1 caches, load/stores which uses AXI-4 protocol to communicate with the memory.}
+\resumeItem{Designed, built and tested a synthesizable 6-stage RISC-V processor (RV64IM ISA) with branch prediction and stalls.}
+\resumeItem{Integrated 2 set-associative L1 caches, load/stores which uses AMBA AXI-4 protocol to communicate with the memory.}
 \resumeItemListEnd
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{Kernel Programming -- File Systems}} $|$ \emph{C, QEMU}}{Mar 2024 -- May 2024}
+{\textbf{\normalsize{xv6 File System -- Journaling and Inode Optimization}} $|$ \emph{C, QEMU}}{Mar 2024 -- May 2024}
 \resumeItemListStart
 \resumeItem{
   Implemented an asynchronous journaling protocol in xv6, reducing disk write() syscall latency by up to 94\%.
@@ -236,7 +236,7 @@
 \vspace{-17pt}
 
 \resumeProjectHeading
-{\textbf{\normalsize{Distributed Systems -- Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
+{\textbf{\normalsize{Fault Tolerant Key-Value Store with \href{https://raft.github.io/raft.pdf}{Raft} Consensus}} $|$ \emph{C++}}{Aug 2023 -- Dec 2023}
 \resumeItemListStart
 \resumeItem{Architected a persistent key-value store using Raft for leader election, replication, and snapshotting for fast recovery.}
 \resumeItem{Executed sharding with consistent hashing for efficient data distribution and automated partition rebalancing.}
@@ -249,12 +249,12 @@
 \resumeProjectHeading
 {\textbf{\normalsize{Unix Systems Programming Projects}} $|$ C, C++, Python, Perl, Bash, QEMU}{Jan 2023 -- Present}
 \resumeItemListStart
-\resumeItem{\textbf{Locks:} RCU-based lock supporting concurrent readers and a single writer, ensuring atomic access to shared resources.}
 \resumeItem{
   \textbf{Syscall -- \textit{ftruncate()}}: Implemented as Unix system call for adjusting the file size—either increasing or decreasing it.
 }
 \resumeItem{\textbf{KV Store}: A multithreaded key-value store with distributed transactions, supporting multiple clients and persistence.}
 \resumeItem{\textbf{GPU Flamegraph}: A tool to visualize GPU (CUDA) kernel execution and power consumption through \textit{NVML} and \textit{nsys}.}
+\resumeItem{\textbf{Locks:} RCU-based lock supporting concurrent readers and a single writer, ensuring atomic access to shared resources.}
 \resumeItemListEnd
 \vspace{-17pt}
 
