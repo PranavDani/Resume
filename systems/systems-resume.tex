@@ -163,7 +163,7 @@
 \section{Technical Skills}
 \begin{itemize}[leftmargin=0.2in, label={}]
   \item \textbf{Languages and Databases:} C, C++, Java, Python, Go, SystemVerilog, nasm; PostgreSQL, MySQL, Firebase\\
-        \textbf{Tools and CI:} Unix/Linux, Docker, QEMU, bash, GTKWave, Kubernetes, Git
+        \textbf{Tools and CI:} Unix/Linux, Docker, QEMU, bash, GTKWave, Kubernetes, Git, Valgrind, GDB, Perf
 \end{itemize}
 \vspace{-16pt}
 
@@ -177,10 +177,10 @@
 \resumeItemListStart
 % Developed an Energy Flamegraph tool using Linux perf\_events and modifying PowerAPI to trace CPU call chains and monitor power consumption per cgroup. This tool generates both CPU and energy flamegraphs from the same execution trace.
 \resumeItem{
-  Engineered a CPU Energy Flamegraph tool using Linux perf\_events, eBPF and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor power consumption per cgroup, enhancing energy efficiency analysis for developers.
+  Engineered a CPU Energy Flamegraph tool utilizing Linux perf\_events, eBPF, and \href{https://powerapi.org/}{PowerAPI} to trace CPU call chains and monitor per-cgroup power consumption, enabling more precise energy efficiency analysis.
 }
 \resumeItem{
-  Crafted a GPU Energy Flamegraph tool using Nsight Systems and nvidia-smi to monitor GPU power consumption per kernel, enhancing GPU power usage insights for optimization.
+  Developed a GPU Energy Flamegraph tool using Nsight Systems and nvidia-smi to gather per-kernel power consumption data, enabling targeted optimization and improvements in energy efficiency.
 }
 % Developed a tool to collect GPU API and kernel launch traces, along with power consumption data, using CUPTI and NVML, which improved the generation of Energy Flamegraphs for better analysis of GPU energy usage.
 \resumeItemListEnd
@@ -203,9 +203,9 @@
 \resumeSubHeadingListStart
 
 \resumeProjectHeading
-{\textbf{\normalsize{Bootable x86 Kernel}} $|$ \emph{C, nasm, QEMU}}{Jun 2025 -- Present}
+{\textbf{\normalsize{Bootable x86 Kernel}} $|$ \emph{C, nasm, QEMU}}{Jun 2025 -- Jul 2025}
 \resumeItemListStart
-\resumeItem{Developed a bootloader that loads the kernel with round-robin scheduling, interrupt handling, and VGA support.}
+\resumeItem{Developed a bootloader that loads a kernel with round-robin scheduling, interrupt handling, and VGA support.}
 \resumeItem{Implements paging, a basic grow-only heap, and ATA-based disk I/O integrated with a simple file system.}
 \resumeItemListEnd
 \vspace{-17pt}
@@ -222,11 +222,11 @@
 {\textbf{\normalsize{xv6 File System -- Journaling and Inode Optimization}} $|$ \emph{C, QEMU}}{Mar 2024 -- May 2024}
 \resumeItemListStart
 \resumeItem{
-  Implemented an asynchronous journaling protocol in xv6, reducing disk write() syscall latency by up to 94\%.
+  Improved disk write() syscall latency by upto 94\% in \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}} by implementing an asynchronous journaling protocol.
 }
 % Developed an asynchronous disk logging protocol for \href{https://pdos.csail.mit.edu/6.828/2012/xv6.html}{\textbf{xv6}}, optimizing write efficiency by caching writes and writing to disk when writing, achieving a 94\% reduction in write latency.
 \resumeItem{
-  Added optimization for "small files" - allowing file data (\textless{} 52B) to be stored in the inode, reducing disk I/O by 29\%.
+  Reduced disk I/O by 29\% for small files by storing file data (\textless{} 52B) in the inode, optimizing disk space utilization.
 }
 
 % \resumeItem{
